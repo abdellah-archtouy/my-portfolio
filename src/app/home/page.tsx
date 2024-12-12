@@ -11,9 +11,13 @@ export default function Home() {
       <div className=' overflow-x-hidden overflow-y-auto scrollbar-thin scrollbar-track-transparent scrollbar-thumb-transparent'>
       <div className='grid bg-black relative overflow-hidden w-screen h-screen items-end xl:bg-[#D7D7D7]'>
       <div className='absolute bg-[#D7D7D7] w-[200%] h-full  top-[70%] rotate-[-10deg]  xl:rotate-12 xl:top-[-50%] xl:h-[250%] xl:right-[70%] xl:bg-black '></div>
-        <img className="  w-auto h-[90%]  absolute bottom-[-5%] right-[-10%] xl:left-[10%] xl:h-[80%]  "
-         src="/my-picture.png" 
-         alt="my image" />
+      {/* <div className=" absolute bottom-[-10%] right-[-10%] xl:left-[10%] xl:h-[80%]  "> */}
+          <Image className=" w-auto absolute bottom-[-10%] right-[-10%] xl:left-[10%] xl:h-[80%]  "
+          width={500}
+          height={500}
+          src="/my-picture.png" 
+          alt="my image" />
+        {/* </div> */}
       <div className='absolute bg-[#0000006b] w-[200%] h-full  top-[70%] rotate-[-10deg] xl:hidden '></div>
       <div className='z-0 relative flex  w-full  h-[20%] xl:h-full xl:w-[60%] xl:gap-[5%] lg:pb-[0] xl:pb-[8%] lg:mb-7 xl:mb-0 xl:flex-col  xl:justify-end justify-self-end xl:text-[#000000] pr-[3%] justify-end 2xl:justify-end  '>
         <nav className="xl:flex flex-row h-[10%] absolute top-[60px] right-[10%] 2xl:h-[15%] 2xl:w-[60%] w-[50%] hidden justify-end text-[clamp(0.75rem,0.639vw+0.341rem,1.875rem)]  text-[#0000009e] gap-[10%] justify-self-end m-0 self-end font-bold ">
