@@ -12,7 +12,12 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        montserrat: ['Montserrat', 'sans-serif'], 
+        raleway: ['Raleway', 'sans-serif'],
+        'open-sans': ['Open Sans', 'sans-serif'],
+      },
     },
   },
-  plugins: [],
+  plugins: [require('tailwind-scrollbar')],
 } satisfies Config;
