@@ -6,7 +6,6 @@ export default function Portfolio() {
     <div className="h-screen overflow-y-auto overflow-x-hidden scrollbar-none">
       <Home/>
       <Skills/>
-      <Skills/>
     </div>
   );
 }
