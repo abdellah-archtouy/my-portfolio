@@ -16,7 +16,7 @@ function Project() {
               alt='1337 pic'
               ></Image>
               <p className='text-[32px] text-start font-open-sans font-semibold text-[#000000c1]'>
-                Hello! I'm Abdellah, a dedicated Full-Stack Developer and UI Designer currently 
+                Hello! I&#39;m Abdellah, a dedicated Full-Stack Developer and UI Designer currently 
                 studying at the 1337 (42 Network) School of Programming. I specialize in building
                  seamless, responsive, and intuitive user interfaces while also developing efficient
                   and scalable back-end solutions. My focus is on delivering not just functional 
@@ -24,8 +24,8 @@ function Project() {
             </div>
             <div className='w-[80%]'>
               <p className=' text-[32px] text-start font-open-sans font-normal text-[#000000c1]'>
-              At 1337 (42), I'm strengthening my problem-solving skills and expanding my software 
-              development knowledge in a collaborative environment. I’m always eager to learn new 
+              At 1337 (42), I&#39;m strengthening my problem-solving skills and expanding my software 
+              development knowledge in a collaborative environment. I&#39;m always eager to learn new 
               technologies and improve my design skills to create smooth user experiences. Whether
               coding back-end systems or designing interfaces, I focus on delivering high-quality,
                 scalable solutions that meet both user needs and business goals.

@@ -13,11 +13,8 @@ import Ts from './skills/ts';
 import Nodejs from './skills/nodejs';
 import Socketio from './skills/socketio';
 import C from './skills/c';
-import English from './skills/engl';
-import Frensh from './skills/frensh';
 import CPP from './skills/cpp';
 import Git from './skills/git';
-import Arabe from './skills/arabe';
 import Docker from './skills/docker';
 
 
