@@ -13,6 +13,9 @@
 # testing
 /coverage
 
+# Exclude .deb files over a certain size
+*.deb
+
 # next.js
 /.next/
 /out/
