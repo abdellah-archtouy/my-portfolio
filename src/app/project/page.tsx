@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 function Project() {
   return (
-    <div className='text-black bg-[#D7D7D7] overflow-x-hidden scrollbar-none overflow-y-auto gap-10  pb-[30px] w-screen  h-fit flex   font-montserrat pt-3 2xl:pt-[60px] font-bold text-[30px] justify-stretch flex-col items-center '>
+    <div className='text-black  bg-[#D7D7D7] overflow-x-hidden scrollbar-none overflow-y-auto gap-10  pb-[30px] w-screen  h-fit flex   font-montserrat pt-3 2xl:pt-[60px] font-bold text-[30px] justify-stretch flex-col items-center '>
         <h1 className='font-montserrat  font-bold text-[30px] leading-none'>
             Project
         </h1>
