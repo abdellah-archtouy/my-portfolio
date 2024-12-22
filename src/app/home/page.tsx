@@ -3,7 +3,6 @@ import '@fontsource/raleway';
 import '@fontsource/open-sans';
 import Image from 'next/image';
 import { FaGithub } from "react-icons/fa6";
-import { CiAt } from "react-icons/ci";
 import { TbBrandLinkedinFilled } from "react-icons/tb";
 import { TbFileCv } from "react-icons/tb";
 
