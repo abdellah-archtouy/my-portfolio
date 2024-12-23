@@ -68,7 +68,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased h-full overflow-hidden`}>
-        <div className={`transition-transform duration-500 ${
+        <div className={`transition-transform duration-500 hidden lg:flex ${
           isHomeVisible ? "smooth-slide-show" : "smooth-slide"
         }`}>
 

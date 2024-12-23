@@ -26,7 +26,7 @@ function footer({ scrollToTop }: FooterProps) {
           <CgMail  className='h-[30px] w-[30px] ' />
           </a>
       </div>  
-      <p className='text-[18px]  '>@2024 Abdellah Archtouy All Rights Reserved.</p>
+      <p className='text-[12px] sm:text-[15px] md:text-[20px]  '>@2024 Abdellah Archtouy All Rights Reserved.</p>
     </div>
   )
 }
