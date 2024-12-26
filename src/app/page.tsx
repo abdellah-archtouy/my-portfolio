@@ -1,7 +1,7 @@
 "use client";
 
-import { useEffect, useRef } from "react";
-import { usePathname } from "next/navigation"; // Correct hook for path in app directory
+import {useRef } from "react";
+// import { usePathname } from "next/navigation"; // Correct hook for path in app directory
 import Home from "./home/page";
 import Skills from "./skills/page";
 import Project from "./project/page";

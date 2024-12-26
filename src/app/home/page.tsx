@@ -6,23 +6,7 @@ import Image from 'next/image';
 import { FaGithub } from "react-icons/fa6";
 import { TbBrandLinkedinFilled } from "react-icons/tb";
 import { TbFileCv } from "react-icons/tb";
-import Figma from '../skills/skills/figma';
-import Html from '../skills/skills/Html';
-import Css from '../skills/skills/Css3';
-import Js from '../skills/skills/js';
-import Reactt from '../skills/skills/React';
-import Django from '../skills/skills/Django';
-import Nextjs from '../skills/skills/Nextjs';
-import Tailwind from '../skills/skills/tailwind';
-import Bootstap from '../skills/skills/bootstrap';
-import Postgres from '../skills/skills/postgres';
-import Ts from '../skills/skills/ts';
-import Nodejs from '../skills/skills/nodejs';
-import Socketio from '../skills/skills/socketio';
-import C from '../skills/skills/c';
-import CPP from '../skills/skills/cpp';
-import Git from '../skills/skills/git';
-import Docker from '../skills/skills/docker';
+
 import AutoSlider from './Slider';
 
 export default function Home() {
@@ -77,60 +61,7 @@ export default function Home() {
               systems. My technical expertise spans across front-end technologies like React, HTML, CSS,
               and JavaScript, as well as back-end frameworks such as Django and Node.js.</p>
               <h1 className='text-black font-bold font-raleway text-[30px]  '>Skills</h1>
-              {/* <div className='flex text-black justify-center gap-[20px] border border-red-400 h-[50px] relative items-center  w-[85%]'> */}
-                {/* <div className=' items1 left-full absolute ' style={{'--position' : 1,} as React.CSSProperties}>
-                  <Html></Html>
-                </div>
-                <div className=' items1 left-full absolute ' style={{'--position' : 1,} as React.CSSProperties}>
-                  <Css></Css>
-                </div>
-                <div className=' items1 left-full absolute ' style={{'--position' : 1,} as React.CSSProperties}>
-                  <Js></Js>
-                </div>
-                <div className=' items1 left-full absolute ' style={{'--position' : 2,} as React.CSSProperties}>
-                  <Nextjs></Nextjs>
-                </div>
-                <div className=' items1 left-full absolute ' style={{'--position' : 3,} as React.CSSProperties}>
-                  <Reactt></Reactt>
-                </div>
-                <div className=' items1 left-full absolute ' style={{'--position' : 4,} as React.CSSProperties}>
-                  <Tailwind></Tailwind>
-                </div>
-                <div className=' items1 left-full absolute ' style={{'--position' : 5,} as React.CSSProperties}>
-                  <Django></Django>
-                </div>
-                <div className=' items1 left-full absolute ' style={{'--position' : 6,} as React.CSSProperties}>
-                  <Git></Git>
-                </div>
-                <div className=' items1 left-full absolute ' style={{'--position' : 7,} as React.CSSProperties}>
-                  <Bootstap></Bootstap>
-                </div>
-                <div className=' items1 left-full absolute ' style={{'--position' : 8,} as React.CSSProperties}>
-                  <Figma/>
-                </div>
-                <div className=' items1 left-full absolute ' style={{'--position' : 9,} as React.CSSProperties}>
-                  <Nodejs></Nodejs>
-                </div>
-                <div className=' items1 left-full absolute ' style={{'--position' : 10,} as React.CSSProperties}>
-                  <Postgres></Postgres>
-                </div>
-                <div className=' items1 left-full absolute ' style={{'--position' : 11,} as React.CSSProperties}>
-                  <Ts></Ts>
-                </div>
-                <div className=' items1 left-full absolute ' style={{'--position' : 12,} as React.CSSProperties}>
-                  <Socketio></Socketio>
-                </div>
-                <div className=' items1 left-full absolute ' style={{'--position' : 13,} as React.CSSProperties}>
-                  <CPP></CPP>
-                </div>
-                <div className=' items1 left-full absolute ' style={{'--position' : 14,} as React.CSSProperties}>
-                  <C></C>
-                </div>
-                <div className=' items1 left-full absolute ' style={{'--position' : 15,} as React.CSSProperties}>
-                  <Docker></Docker>
-                  </div> */}
-                  <AutoSlider></AutoSlider>
-                {/* </div> */}
+              <AutoSlider></AutoSlider>
       </div>
         
       </div>

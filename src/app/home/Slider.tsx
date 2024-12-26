@@ -18,38 +18,49 @@ import Git from "../skills/skills/git";
 import Docker from "../skills/skills/docker";
 
 const AutoSlider = () => {
-  const skills = [
-    <Html />,
-    <Css />,
-    <Js />,
-    <Ts />,
-    <Reactt />,
-    <Nextjs />,
-    <Tailwind />,
-    <Nodejs />,
-    <Django />,
-    <Git />,
-    <Socketio />,
-    <CPP />,
-    <C />,
-    <Bootstap />,
-    <Postgres />,
-    <Docker />,
-    <Figma />,
-  ];
-
-  return (
-    <div className="slider-container">
-      <div className="slider-track text-black">
-        {/* Render the skills twice for seamless looping */}
-        {[...skills, ...skills].map((skill, index) => (
-          <div key={index} className="slider-item">
-            {skill}
-          </div>
-        ))}
+    const skills = [
+      { id: 1, component: <Html /> },
+      { id: 2, component: <Css /> },
+      { id: 3, component: <Js /> },
+      { id: 4, component: <Ts /> },
+      { id: 5, component: <Reactt /> },
+      { id: 6, component: <Nextjs /> },
+      { id: 7, component: <Tailwind /> },
+      { id: 8, component: <Nodejs /> },
+      { id: 9, component: <Django /> },
+      { id: 10, component: <Git /> },
+      { id: 11, component: <Socketio /> },
+      { id: 12, component: <CPP /> },
+      { id: 13, component: <C /> },
+      { id: 14, component: <Bootstap /> },
+      { id: 15, component: <Postgres /> },
+      { id: 16, component: <Docker /> },
+      { id: 17, component: <Figma /> },
+    ];
+  
+    return (
+      <div className="slider-container overflow-hidden relative w-full h-[50px] bg-transparent">
+        <div className="slider-track flex gap-[15px] animate-scroll">
+          {skills.map((skill) => (
+            <div
+              key={skill.id} // Unique key for each skill
+              className="slider-item text-black whitespace-nowrap"
+            >
+              {skill.component}
+            </div>
+          ))}
+          {/* Duplicate skills for seamless scrolling */}
+          {skills.map((skill) => (
+            <div
+              key={`duplicate-${skill.id}`} // Unique key for duplicates
+              className="slider-item text-black whitespace-nowrap"
+            >
+              {skill.component}
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
-  );
-};
+    );
+  };
 
 export default AutoSlider;
