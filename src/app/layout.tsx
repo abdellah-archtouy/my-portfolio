@@ -24,8 +24,16 @@ export default function RootLayout({
 }>) {
   const pathname = usePathname();
   const [isHomeVisible, setIsHomeVisible] = useState(false); // State to track if "home" section is visible
-
+  const changeIsVisibleTrue = () => {
+    console.log("changeIsVisible");
+    setIsHomeVisible(true);
+  }
+  const changeIsVisibleFalse = () => {
+    console.log("changeIsVisible");
+    setIsHomeVisible(false);
+  }
   useEffect(() => {
+    
     const homeSection = document.getElementById("home"); // Get the home section
 
     const updateVisibility = () => {
@@ -72,7 +80,7 @@ export default function RootLayout({
           isHomeVisible ? "smooth-slide-show" : "smooth-slide"
         }`}>
 
-          {!isHomeVisible && <Navbar/>}
+          {!isHomeVisible && <Navbar changeIsVisibleTrue={changeIsVisibleTrue} changeIsVisibleFalse={changeIsVisibleFalse} />}
         </div>
 
         {children}

@@ -20,7 +20,7 @@ import Docker from './skills/docker';
 
 function Skills() {
   return (
-    <div className='flex font-montserrat pt-[30px] font-bold text-[30px]  overflow-hidden bg-[#D7D7D7] flex-col justify-around w-screen h-screen   text-black items-center '>
+    <div className=' hidden xl:flex font-montserrat pt-[60px] font-bold text-[30px]  overflow-hidden bg-[#D7D7D7] flex-col justify-around w-screen    text-black items-center '>
         <h1 className='font-montserrat font-bold text-[30px]'>SKILLS</h1>
         <div className='flex flex-col justify-center gap-[20px] h-[80%] items-center  w-[85%]'>
           <h2 className='font-montserrat font-bold text-[30px] self-start'>USING NOW:</h2>

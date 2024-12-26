@@ -3,15 +3,15 @@ import Image from 'next/image';
 
 function Project() {
   return (
-    <div className='text-black  bg-[#D7D7D7] overflow-x-hidden scrollbar-none overflow-y-auto gap-10  pb-[30px] w-screen  h-fit flex   font-montserrat pt-3 2xl:pt-[60px] font-bold text-[30px] justify-stretch flex-col items-center '>
-        <h1 className='font-montserrat  font-bold text-[30px] leading-none'>
+    <div className='text-black  bg-[#D7D7D7] overflow-x-hidden scrollbar-none overflow-y-auto gap-10  pb-[30px] w-screen  flex   font-montserrat pt-3 2xl:pt-[60px] font-bold text-[30px] justify-stretch flex-col items-center '>
+        {/* <h1 className='font-montserrat  font-bold text-[30px] leading-none'>
             Project
-        </h1>
+        </h1> */}
         <div className='flex flex-col  flex-1 items-center gap-[50px]'>
-            <div className='relative w-[90%] h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px] xl:h-[700px] rounded-[30px]'>
-              <Image className='  rounded-[30px] ' 
-              layout="fill" 
-              objectFit="cover"
+            {/* <div className='relative w-[90%] h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px] xl:h-[700px] rounded-[30px]'>
+              <Image className=' w-[100%] h-[100%] rounded-[30px] ' 
+              width={1000}
+              height={700} 
               quality={100} 
               src="/13372.png"
               alt='1337 pic'
@@ -31,7 +31,10 @@ function Project() {
               coding back-end systems or designing interfaces, I focus on delivering high-quality,
                 scalable solutions that meet both user needs and business goals.
               </p>
-            </div>
+            </div> */}
+            <h1 className='font-montserrat  font-bold text-[30px] leading-none'>
+              Project
+            </h1>
             <div className='flex flex-col gap-[50px] justify-center  h-fit items-center  w-[80%] xl:flex-row '>
               <Image className=' w-full h-auto lg:h-[450px] lg:w-auto rounded-[20px] ' 
               width={200}

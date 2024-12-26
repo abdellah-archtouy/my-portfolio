@@ -20,6 +20,15 @@ export default {
         raleway: ['Raleway', 'sans-serif'],
         'open-sans': ['Open Sans', 'sans-serif'],
       },
+      animation: {
+        scroll: "scroll 20s linear infinite",
+      },
+      keyframes: {
+        scroll: {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-100%)" },
+        },
+      },
     },
   },
   plugins: [require('tailwind-scrollbar')],

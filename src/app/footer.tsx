@@ -10,7 +10,7 @@ interface FooterProps {
 
 function footer({ scrollToTop }: FooterProps) {
   return (
-    <div className='bg-black text-white h-[220px] w-screen gap-5 flex flex-col pt-[10px] justify-center items-center'>
+    <div className=' bg-black text-white h-[220px] w-screen gap-5 flex flex-col pt-[10px] justify-center items-center'>
       <button onClick={scrollToTop} >
         <MdKeyboardDoubleArrowUp/>
       </button>
@@ -26,7 +26,7 @@ function footer({ scrollToTop }: FooterProps) {
           <CgMail  className='h-[30px] w-[30px] ' />
           </a>
       </div>  
-      <p className='text-[12px] sm:text-[15px] md:text-[20px]  '>@2024 Abdellah Archtouy All Rights Reserved.</p>
+      <p className='text-[12px] sm:text-[15px] md:text-[20px]  '>@2024 Designed and developed by Abdellah Archtouy.</p>
     </div>
   )
 }

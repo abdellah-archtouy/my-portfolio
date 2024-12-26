@@ -1,10 +1,29 @@
 import '@fontsource/montserrat';
 import '@fontsource/raleway';
 import '@fontsource/open-sans';
+import './home.css';
 import Image from 'next/image';
 import { FaGithub } from "react-icons/fa6";
 import { TbBrandLinkedinFilled } from "react-icons/tb";
 import { TbFileCv } from "react-icons/tb";
+import Figma from '../skills/skills/figma';
+import Html from '../skills/skills/Html';
+import Css from '../skills/skills/Css3';
+import Js from '../skills/skills/js';
+import Reactt from '../skills/skills/React';
+import Django from '../skills/skills/Django';
+import Nextjs from '../skills/skills/Nextjs';
+import Tailwind from '../skills/skills/tailwind';
+import Bootstap from '../skills/skills/bootstrap';
+import Postgres from '../skills/skills/postgres';
+import Ts from '../skills/skills/ts';
+import Nodejs from '../skills/skills/nodejs';
+import Socketio from '../skills/skills/socketio';
+import C from '../skills/skills/c';
+import CPP from '../skills/skills/cpp';
+import Git from '../skills/skills/git';
+import Docker from '../skills/skills/docker';
+import AutoSlider from './Slider';
 
 export default function Home() {
     return(
@@ -43,20 +62,75 @@ export default function Home() {
                and JavaScript, as well as back-end frameworks such as Django and Node.js.</p>
         </div>
         <div className=' xl:absolute bottom-[60px] right-[10%] w-fit h-fit flex flex-col xl:flex-row justify-around items-center lg:gap-2 xl:pb-[0] pb-3 xl:gap-[10%] xl:p-0 xl:mb-0 xl:self-end '>
-          <a href='' className='xl:bg-[#C4C4C4] hover:bg-[#0000002a] flex items-center justify-center w-[65px] h-[50px] text-white xl:text-black  rounded-xl drop-shadow-lg hover:text-[#ffffff9c] xl:hover:text-[#0000009c] xl:p-[5px] '> <TbFileCv className='  bg-transparent    h-[100%] sm:w-[70%] lg:w-[100%]    ' /></a>
+          <a href="/cv.pdf" target="_blank"  className='xl:bg-[#C4C4C4] hover:bg-[#0000002a] flex items-center justify-center w-[65px] h-[50px] text-white xl:text-black  rounded-xl drop-shadow-lg hover:text-[#ffffff9c] xl:hover:text-[#0000009c] xl:p-[5px] '> <TbFileCv className='  bg-transparent    h-[100%] sm:w-[70%] lg:w-[100%]    ' /></a>
           <a href='https://github.com/abdellah-archtouy' className='xl:bg-[#C4C4C4] hover:bg-[#0000002a] flex items-center justify-center w-[65px] h-[50px] text-white xl:text-black  rounded-xl drop-shadow-lg hover:text-[#FFFFFF9c] xl:hover:text-[#0000009c] xl:p-[5px] '> <FaGithub className=' bg-transparent    h-[100%] sm:w-[70%] lg:w-[100%]    ' /></a>
           <a href='https://www.linkedin.com/in/abdellaharchrouy/' className='xl:bg-[#C4C4C4] hover:bg-[#0000002a] flex items-center justify-center w-[65px] h-[50px] text-white xl:text-black  rounded-xl drop-shadow-lg hover:text-[#FFFFFF9c] xl:hover:text-[#0000009c] xl:p-[5px] '> <TbBrandLinkedinFilled className='  bg-transparent  font-bold h-[100%] sm:w-[70%] lg:w-[100%]      ' /></a>
         </div>
       </div>
       </div> 
-      <div className='w-screen h-screen bg-[#D7D7D7] flex flex-col px-[5%]  items-center xl:hidden gap-[10%] justify-center '>
-        <h1 className='text-black font-bold font-raleway text-[30px]  '>About Me:</h1>
+      <div className='gap-[40px] py-[30px] bg-[#D7D7D7] flex flex-col px-[5%]  items-center xl:hidden  justify-center '>
+        <h1 className='text-black font-bold font-raleway text-[30px]  '>About Me :</h1>
         <p className='font-open-sans text-black font-normal text-[16px] sm:text-[22px] md:text-[32px] xl:text-[220%] 2xl:text-[220%]  ' >
           Hi, I&#39;m Abdellah, a passionate Full-Stack Developer and UI Designer currently studying 
             at 1337 (42) School of Programming. I specialize in building intuitive,
             responsive, and visually appealing user interfaces, as well as developing robust back-end
               systems. My technical expertise spans across front-end technologies like React, HTML, CSS,
               and JavaScript, as well as back-end frameworks such as Django and Node.js.</p>
+              <h1 className='text-black font-bold font-raleway text-[30px]  '>Skills</h1>
+              {/* <div className='flex text-black justify-center gap-[20px] border border-red-400 h-[50px] relative items-center  w-[85%]'> */}
+                {/* <div className=' items1 left-full absolute ' style={{'--position' : 1,} as React.CSSProperties}>
+                  <Html></Html>
+                </div>
+                <div className=' items1 left-full absolute ' style={{'--position' : 1,} as React.CSSProperties}>
+                  <Css></Css>
+                </div>
+                <div className=' items1 left-full absolute ' style={{'--position' : 1,} as React.CSSProperties}>
+                  <Js></Js>
+                </div>
+                <div className=' items1 left-full absolute ' style={{'--position' : 2,} as React.CSSProperties}>
+                  <Nextjs></Nextjs>
+                </div>
+                <div className=' items1 left-full absolute ' style={{'--position' : 3,} as React.CSSProperties}>
+                  <Reactt></Reactt>
+                </div>
+                <div className=' items1 left-full absolute ' style={{'--position' : 4,} as React.CSSProperties}>
+                  <Tailwind></Tailwind>
+                </div>
+                <div className=' items1 left-full absolute ' style={{'--position' : 5,} as React.CSSProperties}>
+                  <Django></Django>
+                </div>
+                <div className=' items1 left-full absolute ' style={{'--position' : 6,} as React.CSSProperties}>
+                  <Git></Git>
+                </div>
+                <div className=' items1 left-full absolute ' style={{'--position' : 7,} as React.CSSProperties}>
+                  <Bootstap></Bootstap>
+                </div>
+                <div className=' items1 left-full absolute ' style={{'--position' : 8,} as React.CSSProperties}>
+                  <Figma/>
+                </div>
+                <div className=' items1 left-full absolute ' style={{'--position' : 9,} as React.CSSProperties}>
+                  <Nodejs></Nodejs>
+                </div>
+                <div className=' items1 left-full absolute ' style={{'--position' : 10,} as React.CSSProperties}>
+                  <Postgres></Postgres>
+                </div>
+                <div className=' items1 left-full absolute ' style={{'--position' : 11,} as React.CSSProperties}>
+                  <Ts></Ts>
+                </div>
+                <div className=' items1 left-full absolute ' style={{'--position' : 12,} as React.CSSProperties}>
+                  <Socketio></Socketio>
+                </div>
+                <div className=' items1 left-full absolute ' style={{'--position' : 13,} as React.CSSProperties}>
+                  <CPP></CPP>
+                </div>
+                <div className=' items1 left-full absolute ' style={{'--position' : 14,} as React.CSSProperties}>
+                  <C></C>
+                </div>
+                <div className=' items1 left-full absolute ' style={{'--position' : 15,} as React.CSSProperties}>
+                  <Docker></Docker>
+                  </div> */}
+                  <AutoSlider></AutoSlider>
+                {/* </div> */}
       </div>
         
       </div>

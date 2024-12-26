@@ -3,8 +3,8 @@ import React from 'react'
 
 function C() {
   return (
-    <div className=' h-[50px] w-[148px] xl:h-[178px] flex xl:flex-col items-center justify-start gap-[20px]  '>
-        <Image className='w-[40px] xl:w-[100px] h-auto  '
+    <div className=' h-[50px] w-[60px] xl:w-[148px] xl:h-[178px] flex xl:flex-col items-center justify-start gap-[10px] xl:gap-[20px] '>
+        <Image className='w-[40px] xl:w-[90px] h-auto  '
          src="/c.png" 
          width={100}
         height={100}

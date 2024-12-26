@@ -19,3 +19,13 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.smooth-slide-show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* .smooth-slide {
+  transform: translateY(-100%);
+  opacity: 0;
+} */
